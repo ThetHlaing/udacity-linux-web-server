@@ -19,7 +19,7 @@ sudo apt-get upgrade
 
 
 
-## Enabled UFW firewall for ssh,www,ntp and 2222/tcp
+## Enabled UFW firewall for ssh,www,ntp and 2200/tcp
 
 sudo ufw default deny incoming
 
