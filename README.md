@@ -14,23 +14,33 @@ Web Site Address - http://13.229.132.113
 ## Upgrade the server
 
 sudo apt-get update
+
 sudo apt-get upgrade
+
 
 
 ## Enabled UFW firewall for ssh,www,ntp and 2222/tcp
 
 sudo ufw default deny incoming
+
 sudo ufw default allow incoming
+
 sudo ufw allow ssh
+
 sudo ufw allow 2222/tcp
+
 sudo ufw allow www
+
 sudo ufw allow ntp
+
 sudo ufw enable
+
 
 
 ## Create a new user - grader [password:grader]
 
 sudo adduser grader
+
 
 ## give sudo access to the new user 'grader'
 
@@ -38,11 +48,13 @@ sudo cp /etc/sudoers.d/90-cloud-init-users /etc/sudoers.d/grader
 
 Change user name to 'grader' from 'ubuntu'
 
+
 ## Create ssh key for 'grader' -> ~/.ssh/id_rsa.pub
 
 su - grader [password:grader] 
 
 ssh-keygen [key:grader]
+
 
 ## Change SSH port to 2200
 
@@ -50,9 +62,11 @@ sudo nano /etc/ssh/sshd_config
 
 sudo service ssh restart
 
+
 ## Install apache
 
 sudo apt-get install apache2
+
 
 ## Download catalog application to /var/www/html/catalog folder via git
 
