@@ -1,11 +1,11 @@
 # udacity-linux-web-server
 Linux Server Configuration - Configuring Linux Web Servers
 
-Server IP - 13.229.132.113
+Server IP - 13.228.183.198
 
 SSH Port - 2200
 
-Web Site Address - http://13.229.132.113
+Web Site Address - http://13.228.183.198
 
 
 
@@ -27,7 +27,7 @@ sudo ufw default allow incoming
 
 sudo ufw allow ssh
 
-sudo ufw allow 2222/tcp
+sudo ufw allow 2200/tcp
 
 sudo ufw allow www
 
@@ -54,6 +54,12 @@ Change user name to 'grader' from 'ubuntu'
 su - grader [password:grader] 
 
 ssh-keygen [key:grader]
+
+## Copy authorized key for user 'grader'
+
+sudo cp /root/.ssh/authorized_keys /home/grader/.ssh/authorized_keys
+sudo chown grader:grader /home/grader/.ssh/authorized_keys
+sudo chmod 644 /home/grader/.ssh/authorized_keys  
 
 
 ## Change SSH port to 2200
