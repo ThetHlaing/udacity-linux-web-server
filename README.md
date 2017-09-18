@@ -8,9 +8,9 @@ Web Site Address - http://13.229.132.113
 
 
 
-#Installation steps
+# Installation steps
 
-##Upgrade the server
+## Upgrade the server
 
 sudo apt-get update
 sudo apt-get upgrade
