@@ -2,6 +2,7 @@
 Linux Server Configuration - Configuring Linux Web Servers
 
 Server IP - 13.229.132.113
+
 SSH Port - 2200
 
 Web Site Address - http://13.229.132.113
