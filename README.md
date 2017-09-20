@@ -37,6 +37,8 @@ sudo ufw enable
 #### REF
 - Lesson 5 > Configuring Ports In UFW
 
+- https://www.howtoforge.com/tutorial/ufw-uncomplicated-firewall-on-ubuntu-15-04/ (For deleting unnecessary rules)
+
 
 ## Create a new user - grader [password:grader]
 
