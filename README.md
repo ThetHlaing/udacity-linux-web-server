@@ -50,6 +50,10 @@ sudo adduser grader
 
 ## give sudo access to the new user 'grader'
 
+usermod -aG sudo username
+
+[OR]
+
 sudo cp /etc/sudoers.d/90-cloud-init-users /etc/sudoers.d/grader
 
 Change user name inside the file to 'grader' from 'ubuntu'
