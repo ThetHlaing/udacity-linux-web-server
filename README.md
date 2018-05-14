@@ -71,6 +71,11 @@ sudo chown grader:grader /home/grader/.ssh/authorized_keys
 
 sudo chmod 644 /home/grader/.ssh/authorized_keys  
 
+###Alternative way to copy the key to server 
+
+`cat ~/.ssh/id_rsa.pub | ssh USER@HOST "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"`
+
+
 #### REF 
 - https://discussions.udacity.com/t/where-to-create-ssh-key-pair-for-grader-using-the-ssh-keygen-tool/299527/2 (For copy key idea)
 
